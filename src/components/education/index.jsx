@@ -94,7 +94,7 @@ const TimelineSection = styled.div`
   gap: 0px; // reduced from 12px
 
   @media (max-width: 660px) {
-    align-items: flex-end;
+    align-items: center;
   }
 `;
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Nav, NavbarContainer, Span, NavItems, GitHubButton, ButtonContainer, MobileIcon, MobileMenu } from './NavbarStyledComponent'; 
+import { Nav, NavbarContainer, Span, NavItems, GitHubButton, ButtonContainer, MobileIcon, MobileMenu } from './NavbarStyledComponent';
 import { FaBars } from 'react-icons/fa';
 import { useTheme } from 'styled-components';
 import { throttle } from 'lodash';
@@ -77,9 +77,9 @@ const Navbar = ({ navbarData, sections }) => {
   return (
     <Nav className={scrollDirection === 'down' ? 'hidden' : ''} ref={navbarRef}>
       <NavbarContainer>
-          <a href="" target='_blank' style={{ display: "flex", alignItems: "center", color: "white", cursor: 'pointer', textDecoration: 'none'}}>
-            <LogoImg src={logo} alt="Logo" />
-          </a>
+        <a href="" target='_blank' style={{ display: "flex", alignItems: "center", color: "white", cursor: 'pointer', textDecoration: 'none' }}>
+          <LogoImg src={logo} alt="Logo" />
+        </a>
         <MobileIcon aria-label="Open mobile menu">
           <FaBars onClick={() => setIsOpen(!isOpen)} />
         </MobileIcon>
@@ -105,7 +105,12 @@ const Navbar = ({ navbarData, sections }) => {
           isOpen &&
           <MobileMenu isOpen={isOpen}>
             {sections.map(section => (
-              <li key={section} style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
+              <li key={section} style={{
+                listStyleType: 'none',
+                padding: '10px 0',
+                margin: 0,
+                width: '100%',
+              }}>
                 <ScrollLink
                   to={section.toLowerCase()}
                   smooth={true}
@@ -117,9 +122,10 @@ const Navbar = ({ navbarData, sections }) => {
                 </ScrollLink>
               </li>
             ))}
-            <GitHubButton style={{ padding: '10px 16px', background: theme.primary, color: 'white', width: '100%' }} href='https://www.github.com/Heena-Kapoor' target="_blank">
-              Github Profile
+            <GitHubButton href="https://www.github.com/Heena-Kapoor" target="_blank">
+              GitHub Profile
             </GitHubButton>
+
           </MobileMenu>
         }
       </NavbarContainer>

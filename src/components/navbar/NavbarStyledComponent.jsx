@@ -21,7 +21,7 @@ export const ScrollLink = styled(LinkS)`
 
 
 export const Nav = styled.div`
-  background-color: ${({theme}) => theme.card_light};
+  background-color: ${({ theme }) => theme.card_light};
   height: 80px;
   display: flex;
   align-items: center;
@@ -91,25 +91,31 @@ export const GitHubButton = styled.a`
   border: 1.8px solid ${({ theme }) => theme.primary};
   justify-content: center;
   display: flex;
-  white-space: nowrap;
   align-items: center;
-  height: 70%;
+  white-space: nowrap;
   border-radius: 20px;
   color: ${({ theme }) => theme.primary};
   cursor: pointer;
-  padding: 0 20px;
+  padding: 12px 20px;
   font-weight: 500;
   text-decoration: none;
   font-size: 16px;
-  transition: all 0.6s ease-in-out;
-    :hover {
-      background: #f99417;
-      color: ${({ theme }) => theme.white};     
-    }
-    @media screen and (max-width: 768px) { 
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background: #f99417;
+    color: ${({ theme }) => theme.white};
+  }
+
+  @media screen and (max-width: 768px) {
     font-size: 14px;
-    }
+    padding: 10px 16px;
+    width: 50%;
+    margin:auto;
+  }
 `;
+
 
 export const ButtonContainer = styled.div`
 
@@ -139,25 +145,30 @@ export const MobileIcon = styled.div`
 `
 
 export const MobileMenu = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 16px;
-    position: absolute;
-    text-align: center;
-    top: 80px;
-    right: 0;
-    width: 100%;
-    padding: 12px 40px 24px 40px;
-    background: ${({ theme }) => theme.card_light+99};
-    transition: all 0.6s ease-in-out;
-    transform: ${({ isOpen }) => (isOpen ? 'translateY(0)' : 'translateY(-100%)')};
-    border-radius: 0 0 20px 20px;
-    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.2);
-    opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
-    z-index: ${({ isOpen }) => (isOpen ? '1000' : '-1000')};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  position: absolute;
+  text-align: center;
+  top: 80px;
+  right: 0;
+  width: 100%;
+  padding: 20px;
+  background: ${({ theme }) => theme.card_light + '99'};
+  transition: all 0.6s ease-in-out;
+  transform: ${({ isOpen }) => (isOpen ? 'translateY(0)' : 'translateY(-100%)')};
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+  opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+  z-index: ${({ isOpen }) => (isOpen ? '1000' : '-1000')};
 
-`
+  @media screen and (max-width: 768px) {
+    padding: 16px;
+    gap: 12px;
+  }
+`;
+
 
 export const MobileMenuItems = styled.ul`
   display: flex;
@@ -206,7 +217,7 @@ export const MobileMenuButton = styled.a`
   }
 `;
 
-export  const MobileLink = styled.a`
+export const MobileLink = styled.a`
   color: ${({ theme }) => theme.text_primary};
   font-weight: 500;
   cursor: pointer;
