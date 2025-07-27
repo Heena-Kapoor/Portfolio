@@ -17,8 +17,7 @@ const SkillsData = [
             { name: 'Redux', image: 'https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/redux-colored.svg' },
             { name: 'Bootstrap', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg' },
             { name: 'Material UI', image: 'https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/materialui-colored.svg' },
-            { name: 'jQuery', image: 'https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/jquery-colored.svg' },
-            { name: 'SASS', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg' }
+            { name: 'jQuery', image: 'https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/jquery-colored.svg' }
         ]
     },
     {
