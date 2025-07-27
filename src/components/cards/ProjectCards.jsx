@@ -100,17 +100,27 @@ const Details = styled.div`
     padding: 0 2px;
 `;
 
-const Title = styled.h2`
-    font-size: 20px;
-    font-weight: 600;
-    color: ${({ theme }) => theme.text_secondary};
-    overflow: hidden;
-    display: -webkit-box;
-    max-width: 100%;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    text-overflow: ellipsis;
+const Title = styled.h3`
+  font-size: 20px;
+  font-weight: 600;
+  color: ${({ theme }) => theme.text_secondary};
+  overflow: hidden;
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 `;
+
 
 const Date = styled.time`
     font-size: 12px;
@@ -163,7 +173,11 @@ const ProjectCards = ({ project, setOpenModal }) => {
                 ))}
             </Tags>
             <Details>
-                <Title id={`project-title-${project.id}`}>{project.title}</Title>
+                <Title id={`project-title-${project.id}`}>
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                        {project.title}
+                    </a>
+                </Title>
                 <Date dateTime={project.date}>{project.date}</Date>
                 <Description
                     $expanded={isExpanded}

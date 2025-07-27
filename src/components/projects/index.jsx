@@ -39,7 +39,7 @@ export const sampleProjects = [
   },
   {
     id: 2,
-    title: "Sewak Travels Cab Booking Platform",
+    title: "Sewak Travels",
     image: "/img/sewak.PNG",
     description:
       "Developed a user-centric cab booking platform for Sewak Travels featuring dynamic city-wise service pages, real-time location coverage, , featuring dynamic dashboards and mobile-optimized performance. Integrated SEO-friendly routing, smooth navigation, and responsive UI to enhance booking experience and visibility across search engines.",
@@ -80,7 +80,7 @@ export const sampleProjects = [
     ontop: 0,
     github: "",
     member: [],
-    link: "https://vitavista.techplek.website/"
+    link: "https://vitavista.ru/"
   },
   {
     id: 1,
