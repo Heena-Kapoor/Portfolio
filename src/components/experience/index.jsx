@@ -82,7 +82,7 @@ const ExperienceTimeline = () => {
         img: '/img/starclinch.jfif',
         link: 'https://starclinch.com/',
         desc: 'Worked as a Developer – Product at StarClinch, leading frontend development for the Express Booking feature, which reduced booking completion time by 35% and improved conversion rates. Optimized website performance and asset delivery, resulting in 40% faster page load times across key pages. Fixed and streamlined UI issues across StarClinch and Cockpit, reducing frontend bugs by 45% and improving platform stability. Actively participated in code reviews and cross-functional collaboration using Jira to deliver features on schedule.',
-        skills: ['React', 'Next.js', 'Redux', 'TypeScript', 'Axios', 'Responsive Design', 'SEO', 'Tailwind css', 'Jira', 'AI', 'Github', Optimization'],
+        skills: ['React', 'Next.js', 'Redux', 'TypeScript', 'Axios', 'Responsive Design', 'SEO', 'Tailwind css', 'Jira', 'AI', 'Github', 'Optimization'],
       },
       {
         id: 2,
