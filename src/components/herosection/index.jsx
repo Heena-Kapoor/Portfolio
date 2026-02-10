@@ -38,7 +38,7 @@ const HeroSection = ({ heroData }) => {
                                 />
                             </Span>
                         </TextLoop>
-                        <SubTitle>Front-End Developer with 1+ years of experience in developing responsive and user-focused web applications using HTML5, CSS3, JavaScript (ES6+), and TypeScript. Proficient in UI libraries and frameworks such as React.js, Next.js, Tailwind CSS, Bootstrap, and Material UI. Experienced in translating Figma designs into clean, maintainable code with strong attention to performance and responsiveness. Skilled in RESTful API integration, version control with Git, and ensuring cross-browser and mobile-first compatibility. Detail-oriented with strong problem-solving skills and a passion for delivering high-quality user experiences.</SubTitle>
+                        <SubTitle>Front-End Developer with 2+ years of experience in developing responsive and user-focused web applications using HTML5, CSS3, JavaScript (ES6+), and TypeScript. Proficient in UI libraries and frameworks such as React.js, Next.js, Tailwind CSS, Bootstrap, and Material UI. Experienced in translating Figma designs into clean, maintainable code with strong attention to performance and responsiveness. Skilled in RESTful API integration, version control with Git, and ensuring cross-browser and mobile-first compatibility. Detail-oriented with strong problem-solving skills and a passion for delivering high-quality user experiences.</SubTitle>
                     </HeroLeftContainer>
 
                     <HeroRightContainer>
