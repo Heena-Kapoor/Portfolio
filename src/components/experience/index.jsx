@@ -76,16 +76,26 @@ const ExperienceTimeline = () => {
     const manualData = [
       {
         id: 1,
+        role: 'Developer Product',
+        company: 'StarClinch',
+        date: 'Dec 2025 - Jan 2026',
+        img: '/img/starclinch.jfif',
+        link: 'https://starclinch.com/',
+        desc: 'Worked as a Developer – Product at StarClinch, leading frontend development for the Express Booking feature, which reduced booking completion time by 35% and improved conversion rates. Optimized website performance and asset delivery, resulting in 40% faster page load times across key pages. Fixed and streamlined UI issues across StarClinch and Cockpit, reducing frontend bugs by 45% and improving platform stability. Actively participated in code reviews and cross-functional collaboration using Jira to deliver features on schedule.',
+        skills: ['React', 'Next.js', 'Redux', 'TypeScript', 'Axios', 'Responsive Design', 'SEO', 'Tailwind css', 'Jira', 'AI', 'Github', Optimization'],
+      },
+      {
+        id: 2,
         role: 'Frontend Developer',
         company: 'TechPlek Technologies',
-        date: 'Jun 2024 - Present',
+        date: 'Jun 2024 - Nov 2025',
         img: '/img/TechplekLogo.jpeg',
         link: 'https://www.techplek.com/',
         desc: 'Developed and maintained scalable, SEO-friendly web applications using React, Next.js, Redux, and TypeScript. Built and optimized 50+ reusable, responsive UI components with a strong focus on accessibility and cross-browser compatibility. Collaborated closely with backend and SEO teams to ensure seamless API integration and optimal search engine visibility. Led a team of interns, providing technical guidance and enforcing best practices in front-end architecture, code quality, and user interface consistency.',
         skills: ['React', 'Next.js', 'Redux', 'TypeScript', 'Axios', 'Responsive Design', 'SEO'],
       },
       {
-        id: 2,
+        id: 3,
         role: 'Developer Intern',
         company: 'TechPlek Technologies',
         date: 'Nov 2023 - May 2024',
@@ -95,7 +105,7 @@ const ExperienceTimeline = () => {
         skills: ['React', 'JavaScript', 'CSS', 'REST APIs', 'Agile', 'Responsive Design'],
       },
       {
-        id: 3,
+        id: 4,
         role: 'Social Entrepreneur (Intern)',
         company: 'Hamari Pahchan',
         date: 'Aug 2022 - Sep 2022',
